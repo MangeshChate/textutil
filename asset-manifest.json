@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.js": "/textutil/static/js/main.2a588a24.js",
+    "static/js/787.5cd74ffb.chunk.js": "/textutil/static/js/787.5cd74ffb.chunk.js",
+    "index.html": "/textutil/index.html",
+    "main.2a588a24.js.map": "/textutil/static/js/main.2a588a24.js.map",
+    "787.5cd74ffb.chunk.js.map": "/textutil/static/js/787.5cd74ffb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.2a588a24.js"
+  ]
+}
