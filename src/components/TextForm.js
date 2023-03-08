@@ -67,25 +67,25 @@ export default function TextForm(props) {
           ></textarea>
         </div>
         <div>
-          <button className="btn btn-success mx-2 my-3" onClick={handleUpClick}>
+          <button className="btn btn-success mx-2 my-1" onClick={handleUpClick}>
             Convert to Upper Case
           </button>
-          <button className="btn btn-primary mx-2 my-3" onClick={handleLoClick}>
+          <button className="btn btn-primary mx-2 my-1" onClick={handleLoClick}>
             Convert to Lower Case
           </button>
-          <button className="btn btn-primary mx-2 my-3" onClick={handleCopy}>
+          <button className="btn btn-primary mx-2 my-1" onClick={handleCopy}>
             Copy Text
           </button>
-          <button className="btn btn-warning mx-2 my-3" onClick={handleReClick}>
+          <button className="btn btn-warning mx-2 my-1" onClick={handleReClick}>
             Trim line
           </button>
           <button
-            className="btn btn-warning mx-2 my-3"
+            className="btn btn-warning mx-2 my-1"
             onClick={handleExtraSpaces}
           >
             Remove Extra Spaces
           </button>
-          <button className="btn btn-danger mx-2 my-3" onClick={handleCleClick}>
+          <button className="btn btn-danger mx-2 my-1" onClick={handleCleClick}>
             Clear
           </button>
         </div>
@@ -93,9 +93,9 @@ export default function TextForm(props) {
       <div className={`container my-2  text-${props.mode==='dark'?'light':'dark'}`} >
         <h2>Your text Summery </h2>
         <p>
-          {text.split(" ").length} words and {text.length} characters
+          {text.split(" ").filter((element)=>{return element.length!== 0}).length} words and {text.length} characters
         </p>
-        <p>{0.008 * text.split(" ").length} Minutes</p>
+        <p>{0.008 * text.split(" ").filter((element)=>{return element.length!== 0}).length} Minutes</p>
         <h2>Preview</h2>
         <p className="">{text.length>0?text:"Enter something to preview"}</p>
       </div>
